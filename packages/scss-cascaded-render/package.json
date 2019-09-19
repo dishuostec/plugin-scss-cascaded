@@ -1,0 +1,25 @@
+{
+  "name": "@dishuostec/scss-cascaded-render",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "dishuostec <dishuostec@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "sass": "^1.22.12"
+  }
+}
