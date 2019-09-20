@@ -1,6 +1,6 @@
 {
   "name": "@dishuostec/svelte-preprocess-scss-cascaded",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "dishuostec <dishuostec@gmail.com>",
   "homepage": "",
@@ -24,7 +24,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@dishuostec/scss-cascaded-render": "^1.0.0"
+    "@dishuostec/scss-cascaded-render": "^1.0.1"
   },
   "devDependencies": {
     "rollup": "^1.21.4",

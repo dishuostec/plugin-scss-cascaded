@@ -1,6 +1,6 @@
 {
   "name": "@dishuostec/scss-cascaded-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "dishuostec <dishuostec@gmail.com>",
   "homepage": "",
@@ -21,8 +21,6 @@
     "watch": "rollup -c -w",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "dependencies": {
   },
   "devDependencies": {
     "rollup": "^1.21.4",
