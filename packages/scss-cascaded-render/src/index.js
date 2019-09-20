@@ -13,7 +13,7 @@ function findIncludePath(file, additional) {
 };
 
 function findDefineFiles(file, config) {
-  const { defineFile = '_define.scss', root } = config;
+  const { defineFile = '_define.scss', root = process.cwd() } = config;
 
   const relativePath = path.relative(root, path.dirname(file));
 

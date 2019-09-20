@@ -2,10 +2,7 @@ import render from '@dishuostec/scss-cascaded-render';
 import { writeFileSync } from 'fs';
 import { createFilter } from 'rollup-pluginutils';
 import { insertStyle } from './style.js';
-import { ensureFileSync } from 'fs-extra';
-
-const MATCH_SASS_FILENAME_RE = /\.sass$/;
-const MATCH_NODE_MODULE_RE = /^~([a-z0-9]|@).+/i;
+import { ensureFileSync } from 'fs-extra/lib/ensure/file.js';
 
 export default function plugin(options = {}) {
   const {

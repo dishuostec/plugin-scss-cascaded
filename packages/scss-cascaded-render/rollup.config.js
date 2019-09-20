@@ -13,8 +13,10 @@ export default [
       resolve(),
       commonjs(),
     ],
-    external: Object.keys(pkg.dependencies || {}).concat(
-      require('module').builtinModules || Object.keys(process.binding('natives')),
-    ),
+    external: [
+      ...Object.keys(pkg.dependencies || {}),
+      ...Object.keys(pkg.peerDependencies || {}),
+      ...(require('module').builtinModules || Object.keys(process.binding('natives'))),
+    ],
   },
 ];

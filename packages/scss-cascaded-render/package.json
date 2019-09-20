@@ -5,21 +5,32 @@
   "author": "dishuostec <dishuostec@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "directories": {
-    "src": "src",
-    "test": "__tests__"
+    "dist": "dist"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+  },
+  "devDependencies": {
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "sass": "^1.22.12"
+  },
+  "peerDependencies": {
     "sass": "^1.22.12"
   }
 }
