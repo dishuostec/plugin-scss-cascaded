@@ -23,7 +23,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@dishuostec/scss-cascaded-render": "^1.0.1",
+    "@dishuostec/scss-cascaded-render": "^1.0.2",
     "fs-extra": "^0.30.0",
     "rollup-pluginutils": ">= 1.3.1"
   },

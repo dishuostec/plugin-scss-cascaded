@@ -2,6 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import sass from 'sass';
 
+function include_tilde(url, prev, done) {
+  if (url[0] === '~') {
+    url = path.resolve('node_modules', url.substr(1));
+  }
+
+  return { file: url };
+}
+
 function findIncludePath(file, additional) {
   return [
     file.length && path.dirname(file),
@@ -40,6 +48,7 @@ export default async function render(file, source, config = {}, renderOptions = 
   const data = combineData(renderOptions.data, defineFiles, source);
 
   return await sass.renderSync({
+    importer: [include_tilde],
     sourceMap: true,
     ...renderOptions,
     data,

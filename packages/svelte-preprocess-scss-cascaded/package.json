@@ -24,7 +24,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@dishuostec/scss-cascaded-render": "^1.0.1"
+    "@dishuostec/scss-cascaded-render": "^1.0.2"
   },
   "devDependencies": {
     "rollup": "^1.21.4",
