@@ -1,4 +1,5 @@
 {
+  "version": "independent",
   "name": "root",
   "private": true,
   "devDependencies": {
