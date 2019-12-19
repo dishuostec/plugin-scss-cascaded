@@ -40,6 +40,7 @@ export default function plugin(options = {}) {
         let restExports;
 
         res.stats.includedFiles.filter(filter).forEach(file => this.addWatchFile(file));
+        res.stats.includedFiles.forEach(file => this.addWatchFile(file));
 
         if (css) {
           if (typeof options.processor === 'function') {
